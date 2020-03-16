@@ -4,6 +4,13 @@
 # The Primo New UI Customization Workflow Development Environment
 
 
+## UIC Quick Start
+```bash
+gulp run --view 01CARLI_UIC-CARLI_UIC --ve
+```
+[open link in browser](http://localhost:8003/discovery/search?vid=01CARLI_UIC:CARLI_UIC)
+
+
 ## Structure
 
 - <b>gulp directory</b> : holds the various build scripts for the environment and the  <b>config.js</b> configuration file in which your target proxy-server must be defined.
