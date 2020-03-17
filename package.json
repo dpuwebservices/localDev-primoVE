@@ -8,12 +8,12 @@
     "babel-preset-es2015": "6.6.0",
     "babelify": "7.3.0",
     "bluebird": "3.3.1",
-    "browser-sync": "2.9.9",
+    "browser-sync": "^2.26.7",
     "browserify": "13.1.1",
     "camel-case": "^3.0.0",
     "colors": "^1.3.3",
-    "connect-modrewrite": "0.8.2",
-    "css": "2.2.1",
+    "connect-modrewrite": "^0.10.2",
+    "css": "^2.2.4",
     "css-color-extractor": "0.0.4",
     "css-color-extractor-cli": "0.0.1",
     "del": "2.2.1",
@@ -35,7 +35,7 @@
     "gulp-streamify": "1.0.2",
     "gulp-template": "4.0.0",
     "gulp-uglify": "3.0.0",
-    "gulp-wrap": "0.11.0",
+    "gulp-wrap": "^0.15.0",
     "gulp-zip": "3.1.0",
     "http-response-object": "1.1.0",
     "listdirs": "3.0.0",
@@ -56,6 +56,14 @@
   },
   "engines": {
     "node": ">=4.2"
+  },
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "dev": "gulp run --view 01CARLI_UIC-CARLI_UIC --ve --useScss",
+    "pack": "package=01CARLI_UIC-CARLI_UIC; cd primo-explore/custom; zip -r \"../../packages/${package}.zip\" $package -x \"*.DS_Store\" -x \"**/*.scss\"; cd ../../"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
   },
   "repository": "https://github.com/ExLibrisGroup/primo-explore-devenv"
 }

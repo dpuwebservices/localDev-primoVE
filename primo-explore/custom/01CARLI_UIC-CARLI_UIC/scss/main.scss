@@ -1,75 +1,8 @@
-@import "uic/fonts", "uic/colors";
+@import "uic/overrides";
 
 body {
   font-family: /*Theinhardt,*/ -apple-system, BlinkMacSystemFont, "Segoe UI",
     "HelveticaNeue-Light", "Helvetica Neue Light", "Source Sans Pro",
     "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-.prm-background,
-html,
-body,
-prm-search .ui-blocker,
-prm-featured-results .horizontal-content-container .horizontal-content-control,
-prm-search-bar .simple-search-wrapper .search-options:after,
-prm-atoz-search-bar .simple-search-wrapper .search-options:after,
-prm-browse-search-bar .simple-search-wrapper .search-options:after,
-prm-tags-search-bar .simple-search-wrapper .search-options:after,
-prm-newspapers-search-bar .simple-search-wrapper .search-options:after,
-prm-search-bar .simple-search-wrapper .search-options md-divider,
-prm-atoz-search-bar .simple-search-wrapper .search-options md-divider,
-prm-browse-search-bar .simple-search-wrapper .search-options md-divider,
-prm-tags-search-bar .simple-search-wrapper .search-options md-divider,
-prm-newspapers-search-bar .simple-search-wrapper .search-options md-divider,
-.prm-view-overlay-inner,
-.__xs prm-facet,
-.__sm prm-facet,
-.__sm .sidebar,
-.__xs .sidebar,
-.available-facets .section-content .md-chips .md-chip .md-button:before,
-.multiselect-submit .multiselect-submit-inner,
-prm-full-view-cont prm-recomendation-item .media-on-hover .pin-button,
-prm-full-view-cont .recommendations-title:after,
-prm-full-view-cont .recommendations-title prm-icon,
-prm-databases-categorize .sticking-wrapper,
-md-virtual-repeat-container#prm-simple-search
-  .md-autocomplete-suggestions
-  md-divider,
-md-dialog md-toolbar:not(.md-menu-toolbar),
-md-card .card-content-block {
-  background-color: #f8f8f8;
-  border-color: #eeeeee;
-}
-
-.prm-alert-bg,
-.bar.alert-bar,
-.classic-input .search-scope {
-  background-color: #a7dff2;
-}
-
-.prm-alert-border,
-.bar.alert-bar,
-.classic-input .search-scope {
-  border-color: #00b5e2;
-}
-
-.prm-alert-bg,
-.bar.alert-bar,
-.classic-input .search-scope {
-  /* background-color: #F7EDA3; */
-}
-
-#signInBtn > span {
-  color: white;
-}
-
-.classic-input .search-scope {
-  background-color: #007fa5;
-  border-color: #007fa5;
-  color: white;
-}
-
-body {
-  border: 1px solid orange;
 }
