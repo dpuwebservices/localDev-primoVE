@@ -1,6 +1,2 @@
-(function(){
-"use strict";
-"use strict";
-
-console.log("this is a test");
-})();
+!function c(i,a,u){function f(t,e){if(!a[t]){if(!i[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);var n=new Error("Cannot find module '"+t+"'");throw n.code="MODULE_NOT_FOUND",n}var o=a[t]={exports:{}};i[t][0].call(o.exports,function(e){return f(i[t][1][e]||e)},o,o.exports,c,i,a,u)}return a[t].exports}for(var s="function"==typeof require&&require,e=0;e<u.length;e++)f(u[e]);return f}({1:[function(e,t,r){"use strict";var n="a8f3cdd768831e345ca9d2f796ff5e5d";!function e(){if(document.getElementById("libchat_"+n)){var t=document.createElement("script");t.type="text/javascript",t.async="true",t.src=("https:"==document.location.protocol?"https://":"http://")+"v2.libanswers.com/load_chat.php?hash="+n;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}else setTimeout(e,15)}()},{}]},{},[1]);
+//# sourceMappingURL=custom.js.map
