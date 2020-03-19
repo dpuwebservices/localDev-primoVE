@@ -59,8 +59,8 @@
   },
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
-    "dev": "gulp run --view 01CARLI_UIC-CARLI_UIC --ve --useScss",
-    "pack": "package=01CARLI_UIC-CARLI_UIC; cd primo-explore/custom; zip -r \"../../packages/${package}.zip\" $package -x \"*.DS_Store\" -x \"**/*.scss\"; cd ../../"
+    "dev": "gulp run --view 01CARLI_UIC-CARLI_UIC --ve --useScss --browserify",
+    "pack": ""
   },
   "resolutions": {
     "graceful-fs": "4.2.3"

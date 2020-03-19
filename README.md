@@ -3,7 +3,18 @@
 ## UIC Quick Start
 
 ```bash
-gulp run --view 01CARLI_UIC-CARLI_UIC --ve --useScss
+# run dev
+npm run dev
+```
+
+```bash
+# create package
+npm run pack
+```
+
+```bash
+# backup create package
+package=01CARLI_UIC-CARLI_UIC; cd primo-explore/custom; zip -r \"../../packages/${package}.zip\" $package -x \"*.DS_Store\" -x \"**/*.scss\"; cd ../../
 ```
 
 - [open link in browser](http://localhost:8003/discovery/search?vid=01CARLI_UIC:CARLI_UIC)

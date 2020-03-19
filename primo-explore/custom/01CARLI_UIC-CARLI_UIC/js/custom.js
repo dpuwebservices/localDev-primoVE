@@ -1,6 +1,6 @@
 (function(){
 "use strict";
-'use strict';
+"use strict";
 
-var app = angular.module('viewCustom', ['angularLoad']);
+console.log("this is a test");
 })();
