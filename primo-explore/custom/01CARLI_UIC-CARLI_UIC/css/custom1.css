@@ -3282,3 +3282,23 @@ md-list.prm-list.prm-linkable-list-items md-list-item ._md-list-item-inner {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+/**
+ * LibChat
+ */
+#lcs_slide_out-14613 {
+  z-index: 40 !important; }
+  #lcs_slide_out-14613 header a {
+    text-align: unset !important;
+    padding: 1rem !important;
+    width: 100%;
+    border: none transparent !important;
+    top: calc(-2rem + -1em) !important;
+    left: unset !important;
+    bottom: auto !important; }
+  #lcs_slide_out-14613 body {
+    background: none transparent !important;
+    border: none transparent !important;
+    padding: unset !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #252525; }
