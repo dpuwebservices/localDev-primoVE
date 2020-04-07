@@ -1,2 +1,36 @@
-!function i(c,u,a){function d(e,t){if(!u[e]){if(!c[e]){var r="function"==typeof require&&require;if(!t&&r)return r(e,!0);if(f)return f(e,!0);var n=new Error("Cannot find module '"+e+"'");throw n.code="MODULE_NOT_FOUND",n}var o=u[e]={exports:{}};c[e][0].call(o.exports,function(t){return d(c[e][1][t]||t)},o,o.exports,i,c,u,a)}return u[e].exports}for(var f="function"==typeof require&&require,t=0;t<a.length;t++)d(a[t]);return d}({1:[function(t,e,r){"use strict";var n="325a3faf25b8f6445806d60e21bcc210";!function(){var t=document.createElement("div");t.setAttribute("id","libchat_"+n),document.body.appendChild(t);var e=document.location.protocol?"https://":"http://",r=document.createElement("script");r.setAttribute("type","text/javascript"),r.setAttribute("async","true"),r.setAttribute("src",e+"v2.libanswers.com/load_chat.php?hash="+n),document.body.appendChild(r)}()},{}]},{},[1]);
-//# sourceMappingURL=custom.js.map
+(function(){
+"use strict";
+"use strict";
+
+var chatID = "325a3faf25b8f6445806d60e21bcc210";
+
+// var lc = document.createElement("script");
+// lc.type = "text/javascript";
+// lc.async = "true";
+// lc.src =
+//   ("https:" == document.location.protocol ? "https://" : "http://") +
+//   `v2.libanswers.com/load_chat.php?hash=${chatID}`;
+// var s = document.getElementsByTagName("script")[0];
+// s.parentNode.insertBefore(lc, s);
+
+/* <div id="libchat_1389aa26189218078bb2f0ebf1bbdb0c"></div>
+<script type="text/javascript" src="https://v2.libanswers.com/load_chat.php?hash=1389aa26189218078bb2f0ebf1bbdb0c"></script> */
+
+(function () {
+  var chat_element = document.createElement("div");
+  chat_element.setAttribute("id", "libchat_" + chatID);
+  document.body.appendChild(chat_element);
+
+  var protocol = document.location.protocol ? "https://" : "http://";
+
+  var chat_script = document.createElement("script");
+  chat_script.setAttribute("type", "text/javascript");
+  chat_script.setAttribute("async", "true");
+  chat_script.setAttribute("src", protocol + "v2.libanswers.com/load_chat.php?hash=" + chatID);
+
+  // const s = document.getElementsByTagName("script")[0];
+  // s.parentNode.insertBefore(lc, s);
+
+  document.body.appendChild(chat_script);
+})();
+})();
