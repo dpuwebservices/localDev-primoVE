@@ -9,6 +9,7 @@ body {
 
 /**
  * LibChat
+ * no CSS is stored in LibChat itself.  All overrides here.
  */
 #lcs_slide_out-14613 {
   z-index: 40 !important;
@@ -16,6 +17,7 @@ body {
   header {
     a {
       text-align: unset !important;
+      font-weight: 700;
       padding: 1rem !important;
       width: 100%;
       border: none transparent !important;
@@ -34,5 +36,10 @@ body {
       "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
     color: #252525;
+
+
+    #s-lch-msg-log .s-lch-msg-patron .s-lch-msg-body {
+      color: blue;
+    }
   }
 }

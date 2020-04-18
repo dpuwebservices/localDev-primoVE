@@ -19,6 +19,10 @@ package=01CARLI_UIC-CARLI_UIC; cd primo-explore/custom; zip -r \"../../packages/
 
 - [open link in browser](http://localhost:8003/discovery/search?vid=01CARLI_UIC:CARLI_UIC)
 
+The following text is from the original repository.
+
+<hr />
+
 ## Structure
 
 - <b>gulp directory</b> : holds the various build scripts for the environment and the <b>config.js</b> configuration file in which your target proxy-server must be defined.

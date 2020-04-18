@@ -3285,11 +3285,13 @@ body {
 
 /**
  * LibChat
+ * no CSS is stored in LibChat itself.  All overrides here.
  */
 #lcs_slide_out-14613 {
   z-index: 40 !important; }
   #lcs_slide_out-14613 header a {
     text-align: unset !important;
+    font-weight: 700;
     padding: 1rem !important;
     width: 100%;
     border: none transparent !important;
@@ -3302,3 +3304,5 @@ body {
     padding: unset !important;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #252525; }
+    #lcs_slide_out-14613 body #s-lch-msg-log .s-lch-msg-patron .s-lch-msg-body {
+      color: blue; }
