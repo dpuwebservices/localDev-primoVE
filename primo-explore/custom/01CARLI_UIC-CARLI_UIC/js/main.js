@@ -95,28 +95,37 @@
 
 /**
  * Remove Target attributes in Main Menu
+ * so pages load in current tab
  */
 (function () {
   "use strict";
 
-  window.onload = function () {
-  //   const main_menu = document.querySelector("prm-main-menu");
-  
-  //   function stripMenuTargetAttributes() {
-  //     console.log("Strip Me");
-  //   }
+  function removeTargetAttrs() {
+    const menulinks = document.querySelectorAll("prm-main-menu a");
+    if (menulinks) {
+      menulinks.forEach((link) => {
+        // kill all "target" attributes in the main menu
+        link.removeAttribute("target");
 
-  //   const observer = new MutationObserver(function (mutations, me) {
-  //     if (main_menu) {
-  //       stripMenuTargetAttributes();
-  //       me.disconnect(); // stop observing
-  //       return;
-  //     }
-  //   });
+        // remove now-false Aria label
+        const attr = "aria-label";
+        const match = ", opens in a new window";
+        if (link.getAttribute(attr) && link.getAttribute(attr).match(match)) {
+          link.setAttribute(attr, link.getAttribute(attr).replace(match, ""));
+        }
+      });
+    }
+  }
 
-  //   stripMenuTargetAttributes();
-  //   observer.observe(document, {
-  //     attributes: true,
-  //   });
-  };
+  removeTargetAttrs();
+
+  const observer = new MutationObserver(function (mutations, me) {
+    removeTargetAttrs();
+  });
+
+  observer.observe(document, {
+    attributes: true,
+    childList: true,
+    subtree: true,
+  });
 })();
