@@ -3306,3 +3306,11 @@ body {
     color: #252525; }
     #lcs_slide_out-14613 body #s-lch-msg-log .s-lch-msg-patron .s-lch-msg-body {
       color: blue; }
+
+/**
+ * Login header
+ */
+.login-header {
+  width: 100%;
+  background-color: #001e62;
+  margin-bottom: 2rem; }

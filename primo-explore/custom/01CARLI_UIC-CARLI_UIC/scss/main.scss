@@ -37,9 +37,17 @@ body {
       "Segoe UI Emoji", "Segoe UI Symbol";
     color: #252525;
 
-
     #s-lch-msg-log .s-lch-msg-patron .s-lch-msg-body {
       color: blue;
     }
   }
+}
+
+/**
+ * Login header
+ */
+.login-header {
+  width: 100%;
+  background-color: $uic-navy;
+  margin-bottom: 2rem;
 }

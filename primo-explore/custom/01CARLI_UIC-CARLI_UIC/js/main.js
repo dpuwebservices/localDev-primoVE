@@ -18,7 +18,6 @@
   document.body.appendChild(chat_script);
 })();
 
-
 /**
  * Stackmap
  */
@@ -46,4 +45,78 @@
   w.src = "https://www.stackmapintegration.com/uic-primove/StackMap.min.js";
   var b = document.body;
   b.appendChild(w);
+})();
+
+/**
+ * Browzine
+ * add link on Journals search page
+ */
+// (function () {
+//   "use strict";
+
+//   if (window.location.href.match("jsearch")) {
+//     var new_card = document.createElement("md-card", { class: "default-card" });
+//     new_card.innerHTML = `
+//       <md-card-title>
+//         <md-card-title-text>
+//           <span class="md-headline">Browzine</span>
+//         </md-card-title-text>
+//       </md-card-title>
+//       <md-card-content>
+//         <p><a href="https://browzine.com/libraries/81">Browzine<a> lets you flip through and read UIC Library-subscribed Journals, equivalent to browsing through physical Library stacks.</p>
+//       </md-card-content>
+//       <md-card-actions layout="row" layout-align="end center">
+//         <md-button class="md-accent md-raised" href="https://browzine.com/libraries/81">Visit Browzine</md-button>
+//         </md-button>
+//       </md-card-actions>`;
+
+//     // callback executed when canvas was found
+//     function addCard(parent_element) {
+//       parent_element.prepend(new_card);
+//     }
+
+//     // set up the mutation observer
+//     var observer = new MutationObserver(function (mutations, me) {
+//       var existing_card = document.querySelector("md-card");
+//       if (existing_card) {
+//         addCard(existing_card.parentElement);
+//         me.disconnect(); // stop observing
+//         return;
+//       }
+//     });
+
+//     // start observing
+//     observer.observe(document, {
+//       childList: true,
+//       subtree: true,
+//     });
+//   }
+// })();
+
+/**
+ * Remove Target attributes in Main Menu
+ */
+(function () {
+  "use strict";
+
+  window.onload = function () {
+  //   const main_menu = document.querySelector("prm-main-menu");
+  
+  //   function stripMenuTargetAttributes() {
+  //     console.log("Strip Me");
+  //   }
+
+  //   const observer = new MutationObserver(function (mutations, me) {
+  //     if (main_menu) {
+  //       stripMenuTargetAttributes();
+  //       me.disconnect(); // stop observing
+  //       return;
+  //     }
+  //   });
+
+  //   stripMenuTargetAttributes();
+  //   observer.observe(document, {
+  //     attributes: true,
+  //   });
+  };
 })();
