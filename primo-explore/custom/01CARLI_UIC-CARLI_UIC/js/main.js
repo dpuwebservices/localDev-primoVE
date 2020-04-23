@@ -1,4 +1,41 @@
 /**
+ * Remove "target" attributes in Main Menu anchor links
+ * forcing pages to load in current tab
+ */
+(function () {
+  "use strict";
+  const targetNode = document.getElementById("some-id");
+
+  function removeTargetAttrs() {
+    const menulinks = document.querySelectorAll("prm-main-menu a");
+    if (menulinks) {
+      menulinks.forEach((link) => {
+        // kill all "target" attributes in the main menu
+        link.removeAttribute("target");
+
+        // remove now-false Aria label
+        const attr = "aria-label";
+        const match = ", opens in a new window";
+        if (link.getAttribute(attr) && link.getAttribute(attr).match(match)) {
+          link.setAttribute(attr, link.getAttribute(attr).replace(match, ""));
+        }
+      });
+    }
+  }
+
+  removeTargetAttrs();
+  const observer = new MutationObserver(function (mutations, me) {
+    removeTargetAttrs();
+  });
+
+  observer.observe(document, {
+    attributes: true,
+    childList: true,
+    subtree: true,
+  });
+})();
+
+/**
  * LibChat
  */
 (function () {
@@ -48,83 +85,54 @@
 })();
 
 /**
- * Browzine
- * add link on Journals search page
- */
-// (function () {
-//   "use strict";
-
-//   if (window.location.href.match("jsearch")) {
-//     var new_card = document.createElement("md-card", { class: "default-card" });
-//     new_card.innerHTML = `
-//       <md-card-title>
-//         <md-card-title-text>
-//           <span class="md-headline">Browzine</span>
-//         </md-card-title-text>
-//       </md-card-title>
-//       <md-card-content>
-//         <p><a href="https://browzine.com/libraries/81">Browzine<a> lets you flip through and read UIC Library-subscribed Journals, equivalent to browsing through physical Library stacks.</p>
-//       </md-card-content>
-//       <md-card-actions layout="row" layout-align="end center">
-//         <md-button class="md-accent md-raised" href="https://browzine.com/libraries/81">Visit Browzine</md-button>
-//         </md-button>
-//       </md-card-actions>`;
-
-//     // callback executed when canvas was found
-//     function addCard(parent_element) {
-//       parent_element.prepend(new_card);
-//     }
-
-//     // set up the mutation observer
-//     var observer = new MutationObserver(function (mutations, me) {
-//       var existing_card = document.querySelector("md-card");
-//       if (existing_card) {
-//         addCard(existing_card.parentElement);
-//         me.disconnect(); // stop observing
-//         return;
-//       }
-//     });
-
-//     // start observing
-//     observer.observe(document, {
-//       childList: true,
-//       subtree: true,
-//     });
-//   }
-// })();
-
-/**
- * Remove Target attributes in Main Menu
- * so pages load in current tab
+ * Add Browzine link on Journals search page
  */
 (function () {
   "use strict";
 
-  function removeTargetAttrs() {
-    const menulinks = document.querySelectorAll("prm-main-menu a");
-    if (menulinks) {
-      menulinks.forEach((link) => {
-        // kill all "target" attributes in the main menu
-        link.removeAttribute("target");
+  var new_card = document.createElement("md-card", { class: "default-card" });
+  new_card.innerHTML = `
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline">Browzine</span>
+        </md-card-title-text>
+      </md-card-title>
+      <md-card-content>
+        <p><a href="https://browzine.com/libraries/81">Browzine<a> lets you flip through and read UIC Library-subscribed Journals, equivalent to browsing through physical Library stacks.</p>
+      </md-card-content>
+      <md-card-actions layout="row" layout-align="end center">
+        <md-button class="md-accent md-raised" href="https://browzine.com/libraries/81">Visit Browzine</md-button>
+        </md-button>
+      </md-card-actions>`;
 
-        // remove now-false Aria label
-        const attr = "aria-label";
-        const match = ", opens in a new window";
-        if (link.getAttribute(attr) && link.getAttribute(attr).match(match)) {
-          link.setAttribute(attr, link.getAttribute(attr).replace(match, ""));
-        }
-      });
+  function placeCard() {
+    const existing_card = document.querySelectorAll("md-card")[0];
+    if (window.location.href.match("jsearch")) {
+      if (existing_card) {
+        existing_card.parentElement.prepend(new_card);
+      }
     }
   }
 
-  removeTargetAttrs();
-
+  // initial appearance on direct load
   const observer = new MutationObserver(function (mutations, me) {
-    removeTargetAttrs();
+    const existing_card = document.querySelectorAll("md-card")[0];
+    if (existing_card) {
+      placeCard();
+      me.disconnect(); // stop observing
+    }
   });
 
+  // subsequent appearances after navigation
+  let loc = window.location.href;
+  setInterval(function () {
+    if (loc != window.location.href) {
+      placeCard();
+      loc = window.location.href;
+    }
+  }, 100); // check every 100ms
+
   observer.observe(document, {
-    attributes: true,
     childList: true,
     subtree: true,
   });
