@@ -90,7 +90,8 @@
 (function () {
   "use strict";
 
-  var new_card = document.createElement("md-card", { class: "default-card" });
+  var new_card = document.createElement("md-card");
+  new_card.className = "default-card";
   new_card.innerHTML = `
       <md-card-title>
         <md-card-title-text>
@@ -98,18 +99,17 @@
         </md-card-title-text>
       </md-card-title>
       <md-card-content>
-        <p><a href="https://browzine.com/libraries/81">Browzine<a> lets you flip through and read UIC Library-subscribed Journals, equivalent to browsing through physical Library stacks.</p>
+        <p><a href="https://browzine.com/libraries/81">Browzine</a> lets you flip through and read UIC Library-subscribed Journals, equivalent to browsing through physical Library stacks.</p>
       </md-card-content>
       <md-card-actions layout="row" layout-align="end center">
-        <md-button class="md-accent md-raised" href="https://browzine.com/libraries/81">Visit Browzine</md-button>
-        </md-button>
+        <h4><a class="md-accent md-raised" href="https://browzine.com/libraries/81">Visit Browzine</a></h4>
       </md-card-actions>`;
 
   function placeCard() {
     const existing_card = document.querySelectorAll("md-card")[0];
     if (window.location.href.match("jsearch")) {
       if (existing_card) {
-        existing_card.parentElement.prepend(new_card);
+        existing_card.parentElement.append(new_card);
       }
     }
   }
