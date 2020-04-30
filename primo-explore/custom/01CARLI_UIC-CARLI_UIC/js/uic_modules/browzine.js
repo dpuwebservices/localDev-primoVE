@@ -11,8 +11,8 @@ function appendJournalsCard() {
   <md-card-content>
     <p><a href="https://browzine.com/libraries/81">Browzine</a> lets you flip through and read UIC Library-subscribed Journals, equivalent to browsing through physical Library stacks.</p>
   </md-card-content>
-  <md-card-footer layout="row" layout-align="end center">
-    <md-button><a class="md-accent md-raised" href="https://browzine.com/libraries/81">Visit Browzine</a></md-button>
+  <md-card-footer layout="row" style="text-align: right">
+    <a class="uic_button md-button md-accent md-raised" href="https://browzine.com/libraries/81">Visit Browzine</a></a>
   </md-card-footer>`;
 
   function placeCard() {

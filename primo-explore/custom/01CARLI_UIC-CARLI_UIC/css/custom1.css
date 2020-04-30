@@ -3280,6 +3280,12 @@ md-card .prm-hue2.card-content-block,
 md-list.prm-list.prm-linkable-list-items md-list-item ._md-list-item-inner {
   background-color: #eeeeee; }
 
+a.uic_button {
+  background-color: #007fa5;
+  color: #ffffff !important; }
+  a.uic_button:hover, a.uic_button:active {
+    background-color: #d50032 !important; }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 

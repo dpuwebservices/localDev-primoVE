@@ -161,3 +161,14 @@ md-card .prm-hue2.card-content-block,
 md-list.prm-list.prm-linkable-list-items md-list-item ._md-list-item-inner {
   background-color: #eeeeee;
 }
+
+
+
+a.uic_button {
+  background-color: $uic-blue;
+  color: $uic-white !important;
+
+  &:hover, &:active {
+    background-color: $uic-red !important;
+  }
+}
