@@ -137,3 +137,14 @@
     subtree: true,
   });
 })();
+
+var app = angular.module('viewCustom', ['angularLoad']);
+
+app.component('myInstitutionComponent', {
+  template: `<span style="margin-left: 40%;">Hello World</span>`
+});
+
+app.component('prmSearchBarAfter', {
+  bindings: {parentCtrl: `<`},
+  template: `<my-institution-component></my-institution-component>`    
+});
