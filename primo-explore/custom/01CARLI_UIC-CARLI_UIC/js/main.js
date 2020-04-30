@@ -21,3 +21,18 @@ browzine.appendJournalsCard();
 //   bindings: { parentCtrl: `<` },
 //   template: `<my-institution-component></my-institution-component>`,
 // });
+
+/**
+ * Collapse "get it from other institutions" dropdown in full record
+ */
+app.component("prmAlmaOtherMembersAfter", {
+  bindings: {
+    parentCtrl: "<",
+  },
+  controller: [
+    function () {
+      var ctrl = this;
+      ctrl.parentCtrl.isCollapsed = true;
+    },
+  ],
+});

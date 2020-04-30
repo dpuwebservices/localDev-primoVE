@@ -3285,7 +3285,7 @@ body {
 
 /**
  * LibChat
- * no CSS is stored in LibChat itself.  All overrides here.
+ * If possible, CSS is stored here and not directly in LibChat.
  */
 #lcs_slide_out-14613 {
   z-index: 40 !important; }
