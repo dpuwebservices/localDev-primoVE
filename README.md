@@ -4,12 +4,12 @@
 
 ```bash
 # run dev
-npm run dev
+yarn run dev
 ```
 
 ```bash
 # create package
-npm run pack
+yarn run pack
 ```
 
 ```bash

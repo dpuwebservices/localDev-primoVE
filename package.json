@@ -2,13 +2,12 @@
   "name": "primo-explore-devenv",
   "version": "1.0.5",
   "description": "The Exlibris Primo Open Discovery Framework",
-  "author": "",
+  "author": "Allan Berry <allan.berry@gmail.com>",
   "main": "gulpfile.js",
   "engines": {
     "node": ">=4.2"
   },
   "scripts": {
-    "preinstall": "npx npm-force-resolutions",
     "dev": "gulp run --view 01CARLI_UIC-CARLI_UIC --ve --useScss --browserify",
     "pack": "gulp create-package --view 01CARLI_UIC-CARLI_UIC --ve --useScss --browserify"
   },
