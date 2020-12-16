@@ -1,12 +1,13 @@
+
 (function(){
     "use strict";
      
     /****************************************************************************************************/
-
+  
         /*In case of CENTRAL_PACKAGE - comment out the below line to replace the other module definition*/
-
+  
     var app = angular.module('viewCustom', ['angularLoad', 'hathiTrustAvailability']);
-
+  
     /****************************************************************************************************/
     // Code from UIC to initially collapse I-Share libraries
     app.component("prmAlmaOtherMembersAfter", {
@@ -21,52 +22,60 @@
         ],
       });
 
+          
+      // Adds the chat button
+    (function() {
+        var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = 'true';
+        lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'v2.libanswers.com/load_chat.php?hash=5b6ccf0890ace526e5703d7f2baf7e4f';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+    })();    
+  
      
     /****************************************************************************************************/
-
+  
         /*In case of CENTRAL_PACKAGE - comment out the below line to replace the other module definition*/
-
+  
         /*var app = angular.module('centralCustom', ['angularLoad']);
-
+  
     /****************************************************************************************************/
     
-/* HathiTrust Availability add-on shared by CARLI 9/3/2020
-* adapted from https://github.com/UMNLibraries/primo-explore-hathitrust-availability
-*
-* NOTE: Be sure to add 'hathiTrustAvailability' to the
-*       angular.module() function at the top of custom.js,
-*       i.e., add it to the array that also includes 'angularLoad', e.g.,
-*
-* var app = angular.module('viewCustom', ['angularLoad', 'hathiTrustAvailability']);
-*
-* There are 4 different available options you can set for "template" below:
-* (See https://github.com/UMNLibraries/primo-explore-hathitrust-availability for more details)
-* E.g.,
-* app.component('prmSearchResultAvailabilityLineAfter', {
-*   template: '<hathi-trust-availability ignore-copyright="true"></hathi-trust-availability>'
-* });
-* 1. To display full-text links to any HathiTrust record, regardless of copyright status, use the ignore-copyright attribute
-* <hathi-trust-availability ignore-copyright="true"></hathi-trust-availability>
-* 2. To avoid looking for full-text availability on records for which you already have an online copy, use hide-online attribute
-* <hathi-trust-availability hide-online="true"></hathi-trust-availability>
-* 3. To suppress full-text links for journals, use hide-if-journal
-* <hathi-trust-availability hide-if-journal="true"></hathi-trust-availability>
-* 4. If you're a HathiTrust partner institution and you want the availability links to use HathiTrust's automatic login, add your SAML IdP's entity ID with:
-* <hathi-trust-availability 
-*     ignore-copyright="true" 
-*     entity-id="https://shibboleth.umich.edu/idp/shibboleth"></hathi-trust-availability>
-*/
-app.component('prmSearchResultAvailabilityLineAfter', {
+  /* HathiTrust Availability add-on shared by CARLI 9/3/2020
+  * adapted from https://github.com/UMNLibraries/primo-explore-hathitrust-availability
+  *
+  * NOTE: Be sure to add 'hathiTrustAvailability' to the
+  *       angular.module() function at the top of custom.js,
+  *       i.e., add it to the array that also includes 'angularLoad', e.g.,
+  *
+  * var app = angular.module('viewCustom', ['angularLoad', 'hathiTrustAvailability']);
+  *
+  * There are 4 different available options you can set for "template" below:
+  * (See https://github.com/UMNLibraries/primo-explore-hathitrust-availability for more details)
+  * E.g.,
+  * app.component('prmSearchResultAvailabilityLineAfter', {
+  *   template: '<hathi-trust-availability ignore-copyright="true"></hathi-trust-availability>'
+  * });
+  * 1. To display full-text links to any HathiTrust record, regardless of copyright status, use the ignore-copyright attribute
+  * <hathi-trust-availability ignore-copyright="true"></hathi-trust-availability>
+  * 2. To avoid looking for full-text availability on records for which you already have an online copy, use hide-online attribute
+  * <hathi-trust-availability hide-online="true"></hathi-trust-availability>
+  * 3. To suppress full-text links for journals, use hide-if-journal
+  * <hathi-trust-availability hide-if-journal="true"></hathi-trust-availability>
+  * 4. If you're a HathiTrust partner institution and you want the availability links to use HathiTrust's automatic login, add your SAML IdP's entity ID with:
+  * <hathi-trust-availability 
+  *     ignore-copyright="true" 
+  *     entity-id="https://shibboleth.umich.edu/idp/shibboleth"></hathi-trust-availability>
+  */
+  app.component('prmSearchResultAvailabilityLineAfter', {
   template: '<hathi-trust-availability ignore-copyright="true" entity-id="https://shib.is.depaul.edu/idp/shibboleth"></hathi-trust-availability>'
-});
-
-angular.module('hathiTrustAvailability', []).constant('hathiTrustBaseUrl', 'https://catalog.hathitrust.org/api/volumes/brief/json/').config(['$sceDelegateProvider', 'hathiTrustBaseUrl', function ($sceDelegateProvider, hathiTrustBaseUrl) {
+  });
+  
+  angular.module('hathiTrustAvailability', []).constant('hathiTrustBaseUrl', 'https://catalog.hathitrust.org/api/volumes/brief/json/').config(['$sceDelegateProvider', 'hathiTrustBaseUrl', function ($sceDelegateProvider, hathiTrustBaseUrl) {
   var urlWhitelist = $sceDelegateProvider.resourceUrlWhitelist();
   urlWhitelist.push(hathiTrustBaseUrl + '**');
   $sceDelegateProvider.resourceUrlWhitelist(urlWhitelist);
-}]).factory('hathiTrust', ['$http', '$q', 'hathiTrustBaseUrl', function ($http, $q, hathiTrustBaseUrl) {
+  }]).factory('hathiTrust', ['$http', '$q', 'hathiTrustBaseUrl', function ($http, $q, hathiTrustBaseUrl) {
   var svc = {};
-
+  
   var lookup = function lookup(ids) {
     if (ids.length) {
       var hathiTrustLookupUrl = hathiTrustBaseUrl + ids.join('|');
@@ -80,7 +89,7 @@ angular.module('hathiTrustAvailability', []).constant('hathiTrustBaseUrl', 'http
       return $q.resolve(null);
     }
   };
-
+  
   // find a HT record URL for a given list of identifiers (regardless of copyright status)
   svc.findRecord = function (ids) {
     return lookup(ids).then(function (bibData) {
@@ -95,7 +104,7 @@ angular.module('hathiTrustAvailability', []).constant('hathiTrustBaseUrl', 'http
       console.error(e);
     });
   };
-
+  
   // find a public-domain HT record URL for a given list of identifiers
   svc.findFullViewRecord = function (ids) {
     var handleResponse = function handleResponse(bibData) {
@@ -116,33 +125,33 @@ angular.module('hathiTrustAvailability', []).constant('hathiTrustBaseUrl', 'http
       console.error(e);
     });
   };
-
+  
   return svc;
-}]).controller('hathiTrustAvailabilityController', ['hathiTrust', function (hathiTrust) {
+  }]).controller('hathiTrustAvailabilityController', ['hathiTrust', function (hathiTrust) {
   var self = this;
-
+  
   self.$onInit = function () {
     if (!self.msg) self.msg = 'Full Text Available at HathiTrust';
-
+  
     // prevent appearance/request iff 'hide-online'
     if (self.hideOnline && isOnline()) {
       return;
     }
-
+  
     // prevent appearance/request iff 'hide-if-journal'
     if (self.hideIfJournal && isJournal()) {
       return;
     }
-
+  
     // look for full text at HathiTrust
     updateHathiTrustAvailability();
   };
-
+  
   var isJournal = function isJournal() {
     var format = self.prmSearchResultAvailabilityLine.result.pnx.addata.format[0];
     return !(format.toLowerCase().indexOf('journal') == -1); // format.includes("Journal")
   };
-
+  
   var isOnline = function isOnline() {
     var delivery = self.prmSearchResultAvailabilityLine.result.delivery || [];
     if (!delivery.GetIt1) return delivery.deliveryCategory.indexOf('Alma-E') !== -1;
@@ -152,15 +161,15 @@ angular.module('hathiTrustAvailability', []).constant('hathiTrustBaseUrl', 'http
       });
     });
   };
-
+  
   var formatLink = function formatLink(link) {
     return self.entityId ? link + '?signon=swle:' + self.entityId : link;
   };
-
+  
   var isOclcNum = function isOclcNum(value) {
     return value.match(/^(\(ocolc\))?\d+$/i);
   };
-
+  
   var updateHathiTrustAvailability = function updateHathiTrustAvailability() {
     var hathiTrustIds = (self.prmSearchResultAvailabilityLine.result.pnx.addata.oclcid || []).filter(isOclcNum).map(function (id) {
       return 'oclc:' + id.toLowerCase().replace('(ocolc)', '');
@@ -169,7 +178,7 @@ angular.module('hathiTrustAvailability', []).constant('hathiTrustBaseUrl', 'http
       if (res) self.fullTextLink = formatLink(res);
     });
   };
-}]).component('hathiTrustAvailability', {
+  }]).component('hathiTrustAvailability', {
   require: {
     prmSearchResultAvailabilityLine: '^prmSearchResultAvailabilityLine'
   },
@@ -211,16 +220,9 @@ angular.module('hathiTrustAvailability', []).constant('hathiTrustBaseUrl', 'http
                   <prm-icon external-link="" icon-type="svg" svg-icon-set="primo-ui" icon-definition="open-in-new"></prm-icon>\
                 </a>\
               </span>'
-});
-
-/* END HathiTrust Availability add-on */ 
+  });
+  
+  /* END HathiTrust Availability add-on */ 
        
-    
-      // Adds the chat button
-      (function() {
-          var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = 'true';
-          lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'v2.libanswers.com/load_chat.php?hash=5b6ccf0890ace526e5703d7f2baf7e4f';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-      })();    
-
-})();
+  
+  })();
