@@ -8,8 +8,10 @@
     "node": ">=4.2"
   },
   "scripts": {
-    "dev": "gulp run --view 01CARLI_UIC-CARLI_UIC --ve --useScss --browserify",
-    "pack": "gulp create-package --view 01CARLI_UIC-CARLI_UIC --ve --useScss --browserify"
+    "runpre": "gulp run --view 01CARLI_DPU-PREPROD --ve --useScss --browserify",
+    "packpre": "gulp create-package --view 01CARLI_DPU-PREPROD --ve --useScss --browserify",
+    "runprod": "gulp run --view 01CARLI_DPU-CARLI_DPU --ve --useScss --browserify",
+    "packprod": "gulp create-package --view 01CARLI_DPU-CARLI_DPU --ve --useScss --browserify"
   },
   "resolutions": {
     "graceful-fs": "4.2.2"
