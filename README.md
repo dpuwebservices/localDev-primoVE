@@ -1,25 +1,34 @@
 # The Primo New UI Customization Workflow Development Environment
+<!-- 
+Current Issues
+- Would like to separate out JS files – can't figure out how to separate HT file 
 
-## UIC Quick Start
+- SCSS not watching in the correct location, so not picking up changes. Temp workaround: create a temp config.rb file and manually run compass watch function 
+
+- Cannot verify I-Share button styling (from creating new repo) until borrowing turned back on 
+ -->
+
+## Quick Start
 
 ```bash
-# run dev
-yarn run dev
+# run production
+yarn runprod
 ```
 
 ```bash
-# create package
-yarn run pack
+# create package for production
+yarn packprod
 ```
 
 ```bash
 # backup create package
-package=01CARLI_UIC-CARLI_UIC; cd primo-explore/custom; zip -r \"../../packages/${package}.zip\" $package -x \"*.DS_Store\" -x \"**/*.scss\"; cd ../../
+package=01CARLI_DPU-CARLI_DPU; cd primo-explore/custom; zip -r \"../../packages/${package}.zip\" $package -x \"*.DS_Store\" -x \"**/*.scss\"; cd ../../
 ```
 
-- [open link in browser](http://localhost:8003/discovery/search?vid=01CARLI_UIC:CARLI_UIC)
+- [open link in browser](http://localhost:8003/discovery/search?vid=01CARLI_DPU-CARLI_DPU)
 
-## UIC config
+
+## (from Allan) UIC config
 
 UIC-specific config are in these files:
 - /README.md (this file)
