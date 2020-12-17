@@ -12,7 +12,7 @@ htApp.init();
     /****************************************************************************************************/
   
         /*In case of CENTRAL_PACKAGE - comment out the below line to replace the other module definition*/
-        // const app = angular.module("viewCustom", ["angularLoad"]);
+      // const app = angular.module("viewCustom", ["angularLoad"]);
   
     /****************************************************************************************************/
     // Code from UIC to initially collapse I-Share libraries
