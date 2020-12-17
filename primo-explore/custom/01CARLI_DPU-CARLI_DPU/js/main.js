@@ -7,7 +7,7 @@ const htApp = require("./dpu_modules/hathitrust");
 htApp.init();
 
 (function(){
-    "use strict";
+
      
     /****************************************************************************************************/
   

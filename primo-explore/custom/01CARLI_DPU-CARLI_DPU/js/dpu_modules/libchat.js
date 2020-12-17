@@ -1,4 +1,5 @@
 function init() {
+
   const chatID = "5b6ccf0890ace526e5703d7f2baf7e4f";
   const chat_element = document.createElement("div");
   const protocol = document.location.protocol ? "https://" : "http://";
