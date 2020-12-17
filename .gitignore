@@ -3,3 +3,4 @@ primo-explore/tmp/
 .idea/
 package-lock.json
 /node_modules/
+.sass-cache*
