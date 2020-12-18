@@ -6,6 +6,27 @@
 
 - Cannot verify I-Share button styling (from creating new repo) until borrowing turned back on 
 
+- Cannot run view other than prod locally, see this error:
+```bash
+       Local: http://localhost:8003
+    External: http://192.168.1.44:8003
+ -------------------------------------
+          UI: http://localhost:3001
+ UI External: http://localhost:3001
+ -------------------------------------
+[Browsersync] Serving files from: primo-explore
+[Browsersync] Reloading Browsers...
+custom/01CARLI_DPU-CARLI_PREPROD
+undefined:1
+
+SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at IncomingMessage.<anonymous> (C:\Users\cmcclu11\sites\localdev-primove\gulp\tasks\servers.js:56:53)
+    at IncomingMessage.emit (events.js:326:22)
+    at endReadableNT (_stream_readable.js:1252:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+```
 
 ## Quick Start
 
