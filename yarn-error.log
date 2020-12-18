@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\cmcclu11\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js init
+  C:\Program Files\nodejs\node.exe C:\Users\cmcclu11\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js runprod
 
 PATH: 
-  C:\Python39\Scripts\;C:\Python39\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Python27\;C:\Python34\Scripts;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\PuTTY\;C:\Program Files (x86)\PharosSystems\Core;%NVM_HOME%;%NVM_SYMLINK%;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Sennheiser\SenncomSDK\;C:\Users\cmcclu11\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\cmcclu11\AppData\Local\Programs\Python\Python36-32\;C:\Ruby22-x64\bin;C:\Ruby22-x64\lib\ruby\gems\2.2.0\gems;C:\Users\cmcclu11\AppData\Local\Microsoft\WindowsApps;C:\Users\cmcclu11\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\cmcclu11\AppData\Roaming\nvm;C:\Users\cmcclu11\AppData\Roaming\npm
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\cmcclu11\bin;C:\Python39\Scripts;C:\Python39;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\QuickTime\QTSystem;C:\Python27;C:\Python34\Scripts;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files (x86)\PuTTY;C:\Program Files (x86)\PharosSystems\Core;%NVM_HOME%;%NVM_SYMLINK%;C:\WINDOWS\System32\OpenSSH;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Program Files (x86)\Sennheiser\SenncomSDK;C:\Users\cmcclu11\AppData\Local\Programs\Python\Python36-32\Scripts;C:\Users\cmcclu11\AppData\Local\Programs\Python\Python36-32;C:\Ruby22-x64\bin;C:\Ruby22-x64\lib\ruby\gems\2.2.0\gems;C:\Users\cmcclu11\AppData\Local\Microsoft\WindowsApps;C:\Users\cmcclu11\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\cmcclu11\AppData\Roaming\nvm;C:\Users\cmcclu11\AppData\Roaming\npm
 
 Yarn version: 
   1.22.4
@@ -14,33 +14,29 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: canceled
-      at Interface.<anonymous> (C:\Users\cmcclu11\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:137008:13)
-      at Interface.emit (events.js:314:20)
-      at Interface._ttyWrite (readline.js:875:16)
-      at ReadStream.onkeypress (readline.js:213:10)
-      at ReadStream.emit (events.js:314:20)
-      at emitKeys (internal/readline/utils.js:344:14)
-      at emitKeys.next (<anonymous>)
-      at ReadStream.onData (readline.js:1144:36)
-      at ReadStream.emit (events.js:314:20)
-      at addChunk (_stream_readable.js:307:12)
+  SyntaxError: C:\Users\cmcclu11\sites\localdev-primove\package.json: Unexpected token } in JSON at position 638
+      at JSON.parse (<anonymous>)
+      at C:\Users\cmcclu11\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\cmcclu11\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\cmcclu11\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
 
 npm manifest: 
   {
     "name": "primo-explore-devenv",
     "version": "1.0.5",
     "description": "The Exlibris Primo Open Discovery Framework",
-    "author": "Allan Berry <allan.berry@gmail.com>",
+    "author": "Christine McClure  <camcclure@gmail.com>",
     "main": "gulpfile.js",
     "engines": {
       "node": ">=4.2"
     },
     "scripts": {
-      "runpre": "gulp run --view 01CARLI_DPU-PREPROD --ve --useScss --browserify",
-      "packpre": "gulp create-package --view 01CARLI_DPU-PREPROD --ve --useScss --browserify",
+  
       "runprod": "gulp run --view 01CARLI_DPU-CARLI_DPU --ve --useScss --browserify",
-      "packprod": "gulp create-package --view 01CARLI_DPU-CARLI_DPU --ve --useScss --browserify"
+      "packprod": "gulp create-package --view 01CARLI_DPU-CARLI_DPU --ve --useScss --browserify",
+      "packpre": "gulp create-package --view 01CARLI_DPU-CARLI_PREPROD --ve --useScss --browserify",
+      "packtest": "gulp create-package --view 01CARLI_DPU-TESTING --ve --useScss --browserify",    
     },
     "resolutions": {
       "graceful-fs": "4.2.2"
