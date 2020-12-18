@@ -84,3 +84,7 @@ md-card.highlight {
 /* line 90, ../scss/custom1.scss */
 .prm-primary-bg, prm-atoz-search-bar, prm-browse-search-bar, prm-collection-gallery-header .collection-header-inner, prm-newspapers-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark:after, prm-tags-search-bar, prm-tree-nav prm-spinner .diamond {
   background: #0D5EB8; }
+
+/* line 94, ../scss/custom1.scss */
+#libchat_cbd7444341bc11933de2ea1aa559adbb {
+  position: absolute; }
