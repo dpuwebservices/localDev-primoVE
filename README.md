@@ -2,7 +2,7 @@
  
 ## Current Issues
 
-- SCSS not watching in the correct location, so not picking up changes. Temp workaround: create a temp config.rb file and manually run compass watch function 
+- SCSS not watching in the correct location, so not picking up changes. Temp workaround: create a temp config.rb file and manually run compass watch function (which needs to be run from command line outside of VS Code) 
 
 - Cannot verify I-Share button styling (from creating new repo) until borrowing turned back on 
 
