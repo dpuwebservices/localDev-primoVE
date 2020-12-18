@@ -2,7 +2,7 @@
   "name": "primo-explore-devenv",
   "version": "1.0.5",
   "description": "The Exlibris Primo Open Discovery Framework",
-  "author": "Allan Berry <allan.berry@gmail.com>",
+  "author": "Christine McClure  <camcclure@gmail.com>",
   "main": "gulpfile.js",
   "engines": {
     "node": ">=4.2"
