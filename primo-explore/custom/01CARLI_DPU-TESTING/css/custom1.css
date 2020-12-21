@@ -34,10 +34,6 @@ prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
   font-weight: bold;
   border-radius: 4px; }
 
-/* line 52, ../scss/custom1.scss */
-.lcs_slide_out, .lcs_slide_out-r {
-  top: 50% !important; }
-
 /* line 57, ../scss/custom1.scss */
 md-card-content img {
   max-width: 100%; }
