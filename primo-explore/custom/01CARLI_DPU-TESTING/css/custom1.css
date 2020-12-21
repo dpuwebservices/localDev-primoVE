@@ -16,22 +16,23 @@ prm-search > md-content.md-primoExplore-theme .main {
 /* line 31, ../scss/custom1.scss */
 #libchat_cbd7444341bc11933de2ea1aa559adbb {
   position: fixed;
+  right: 0;
   top: 50%; }
 
 /* Show Main Menu links on Services Page */
-/* line 37, ../scss/custom1.scss */
+/* line 38, ../scss/custom1.scss */
 prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
   display: inline; }
 
-/* line 41, ../scss/custom1.scss */
+/* line 42, ../scss/custom1.scss */
 .my-refworks-ctm {
   display: none; }
 
-/* line 44, ../scss/custom1.scss */
+/* line 45, ../scss/custom1.scss */
 .my-refworks-separator-ctm {
   display: none; }
 
-/* line 50, ../scss/custom1.scss */
+/* line 51, ../scss/custom1.scss */
 .links-block-item .button-as-link.md-button.md-primoExplore-theme.md-ink-ripple {
   background: green;
   color: white;
@@ -39,49 +40,49 @@ prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
   font-weight: bold;
   border-radius: 4px; }
 
-/* line 65, ../scss/custom1.scss */
+/* line 66, ../scss/custom1.scss */
 md-card-content img {
   max-width: 100%; }
-/* line 66, ../scss/custom1.scss */
+/* line 67, ../scss/custom1.scss */
 md-card-content a {
   color: #001a00;
   font-weight: bold; }
 
-/* line 69, ../scss/custom1.scss */
+/* line 70, ../scss/custom1.scss */
 md-card.highlight {
   background: white; }
 
-/* line 72, ../scss/custom1.scss */
+/* line 73, ../scss/custom1.scss */
 .search-scope-text {
   font-family: "Arial", "Helvetica", sans-serif; }
-  /* line 74, ../scss/custom1.scss */
+  /* line 75, ../scss/custom1.scss */
   .search-scope-text h3 {
     font-size: 18px;
     font-style: italic;
     font-weight: bold; }
-  /* line 79, ../scss/custom1.scss */
+  /* line 80, ../scss/custom1.scss */
   .search-scope-text p {
     margin: 0 0 20px 0; }
 
 @media only screen and (min-width: 1200px) {
-  /* line 87, ../scss/custom1.scss */
+  /* line 88, ../scss/custom1.scss */
   .available-online-filter img {
     max-width: 30%;
     float: left;
     border: 1px solid #001a00; }
-  /* line 88, ../scss/custom1.scss */
+  /* line 89, ../scss/custom1.scss */
   .available-online-filter p {
     max-width: 66%;
     float: right;
     padding: 4% 0; } }
-/* line 90, ../scss/custom1.scss */
+/* line 91, ../scss/custom1.scss */
 .available-online-filter p {
   color: black; }
 
-/* line 95, ../scss/custom1.scss */
+/* line 96, ../scss/custom1.scss */
 .prm-primary-bg.prm-hue1, prm-atoz-search-bar.prm-hue1, prm-browse-search-bar.prm-hue1, prm-collection-gallery-header .prm-hue1.collection-header-inner, prm-newspapers-search-bar.prm-hue1, prm-search-bar.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-tags-search-bar.prm-hue1, prm-topbar .top-nav-bar, prm-tree-nav prm-spinner .prm-hue1.diamond {
   background: #001a00; }
 
-/* line 99, ../scss/custom1.scss */
+/* line 100, ../scss/custom1.scss */
 .prm-primary-bg, prm-atoz-search-bar, prm-browse-search-bar, prm-collection-gallery-header .collection-header-inner, prm-newspapers-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark:after, prm-tags-search-bar, prm-tree-nav prm-spinner .diamond {
   background: green; }
