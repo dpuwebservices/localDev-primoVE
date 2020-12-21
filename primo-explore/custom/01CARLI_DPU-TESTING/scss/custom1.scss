@@ -34,6 +34,11 @@ $topBar: $darkerSharepoint;
   top: 50%;
 }
 
+// Need solution for this -- currently displays under banner
+// <dialog aria-labelledby="libchat_modal_title" role="dialog" open="">
+// <h1 id="libchat_modal_title" tabindex="0">
+
+
 /* Show Main Menu links on Services Page */
 prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {display: inline;}
 
