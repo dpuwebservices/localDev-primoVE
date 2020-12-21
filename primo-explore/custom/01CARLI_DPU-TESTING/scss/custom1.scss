@@ -25,6 +25,14 @@ $topBar: $darkerSharepoint;
 
 
 
+// Styling for LibChat widget -- need code of production widget!
+// #libchat_cbd7444341bc11933de2ea1aa559adbb for TESTING
+// #libchat_5b6ccf0890ace526e5703d7f2baf7e4f for PRODUCTION
+#libchat_cbd7444341bc11933de2ea1aa559adbb {
+  position: fixed;
+  top: 50%;
+}
+
 /* Show Main Menu links on Services Page */
 prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {display: inline;}
 
