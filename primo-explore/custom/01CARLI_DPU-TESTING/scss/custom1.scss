@@ -34,9 +34,10 @@ $topBar: $darkerSharepoint;
   top: 50%;
 }
 
-// Need solution for this -- currently displays under banner
-// <dialog aria-labelledby="libchat_modal_title" role="dialog" open="">
-// <h1 id="libchat_modal_title" tabindex="0">
+// Need solution for this -- currently displays under banner in FF
+#libchat_modal_18617 dialog[open]{
+  margin: 30% 0 0 80%;
+}
 
 
 /* Show Main Menu links on Services Page */
