@@ -68,13 +68,14 @@ prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
 }
 
 // This is on test instance -- need ID# for production
+// proactive "chat now?" window. Using !important because something internally is overwriting the code. 
 #libchat_modal_20608 {
-  z-index: 100;
-  position: fixed;
-  left:unset;
-  bottom:unset;
-  right:6%;
-  top: 40%;
+  z-index: 100 !important;
+  position: fixed !important;
+  left:unset !important;
+  bottom:unset !important;
+  right:6% !important;
+  top: 40% !important;
 }
 
 
