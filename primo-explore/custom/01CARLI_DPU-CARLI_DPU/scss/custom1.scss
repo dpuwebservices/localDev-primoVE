@@ -63,15 +63,19 @@ prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
   position: fixed;
   left:unset;
   bottom:unset;
-  right:6%;
-  top: 40%;
+  right:0;
+  top: 50%;
 }
 
 // This is on test instance -- need ID# for production
-#libchat_modal_20608 dialog[open]{
-  margin: 30% 0 0 80%;
+#libchat_modal_20608 {
+  z-index: 100;
+  position: fixed;
+  left:unset;
+  bottom:unset;
+  right:6%;
+  top: 40%;
 }
-
 
 
 md-card-content{
