@@ -26,15 +26,15 @@ $topBar: $darkerSharepoint;
 
 
 // Styling for LibChat widget -- need code of production widget!
-// #libchat_cbd7444341bc11933de2ea1aa559adbb for TESTING
+// #libchat_4661c700ed5936ed7ce684ec54e4eba1 for TESTING/PREPROD
 // #libchat_5b6ccf0890ace526e5703d7f2baf7e4f for PRODUCTION
-#libchat_cbd7444341bc11933de2ea1aa559adbb {
+#libchat_4661c700ed5936ed7ce684ec54e4eba1 {
   position: fixed;
   right:0;
   top: 50%;
 }
 
-// Need solution for this -- currently displays under banner in FF
+// This is on test instance -- need ID# for production
 #libchat_modal_18617 dialog[open]{
   margin: 30% 0 0 80%;
 }

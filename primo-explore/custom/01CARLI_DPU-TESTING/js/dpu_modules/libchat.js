@@ -1,6 +1,6 @@
 function init() {
-
-  const chatID = "cbd7444341bc11933de2ea1aa559adbb";
+// will need to replace this with production hash (and change widget to button type)
+  const chatID = "4661c700ed5936ed7ce684ec54e4eba1"; 
   const chat_element = document.createElement("div");
   const protocol = document.location.protocol ? "https://" : "http://";
   const chat_script = document.createElement("script");
