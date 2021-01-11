@@ -1,6 +1,9 @@
 function init() {
 
-  const chatID = "5b6ccf0890ace526e5703d7f2baf7e4f";
+  // testing/preprod
+  const chatID = "4661c700ed5936ed7ce684ec54e4eba1";
+  // production
+  // const chatID = "5b6ccf0890ace526e5703d7f2baf7e4f";
   const chat_element = document.createElement("div");
   const protocol = document.location.protocol ? "https://" : "http://";
   const chat_script = document.createElement("script");

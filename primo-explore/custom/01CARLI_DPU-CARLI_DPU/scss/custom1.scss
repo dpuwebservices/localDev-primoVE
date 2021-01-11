@@ -48,9 +48,31 @@ prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
 
 
 // Need to specific ID# for specific chat instance in SpringShare, or !important
+// remove when switch to button for prod
 .lcs_slide_out, .lcs_slide_out-r{
   top:50% !important;
 }
+
+
+// Styling for LibChat widget -- need code of production widget!
+// #libchat_4661c700ed5936ed7ce684ec54e4eba1 for TESTING/PREPROD
+// #libchat_5b6ccf0890ace526e5703d7f2baf7e4f for PRODUCTION
+// Chrome not affected by these settings. Wors in Firefox
+#libchat_4661c700ed5936ed7ce684ec54e4eba1 {
+  z-index: 100;
+  position: fixed;
+  left:unset;
+  bottom:unset;
+  right:6%;
+  top: 40%;
+}
+
+// This is on test instance -- need ID# for production
+#libchat_modal_20608 dialog[open]{
+  margin: 30% 0 0 80%;
+}
+
+
 
 md-card-content{
   img {max-width: 100%;}
