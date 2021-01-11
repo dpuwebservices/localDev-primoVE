@@ -11,7 +11,7 @@
     "runprod": "gulp run --view 01CARLI_DPU-CARLI_DPU --ve --useScss --browserify",
     "packprod": "gulp create-package --view 01CARLI_DPU-CARLI_DPU --ve --useScss --browserify",
     "runpre": "gulp run --view 01CARLI_DPU-PREPROD --ve --useScss --browserify",
-    "packpre": "gulp create-package --view 01CARLI_DPU-CARLI_PREPROD --ve --useScss --browserify",
+    "packpre": "gulp create-package --view 01CARLI_DPU-PREPROD --ve --useScss --browserify",
     "runtest": "gulp run --view 01CARLI_DPU-TESTING --ve --useScss --browserify",
     "packtest": "gulp create-package --view 01CARLI_DPU-TESTING --ve --useScss --browserify"
   },
