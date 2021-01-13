@@ -49,15 +49,15 @@ prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
 
 // Need to specific ID# for specific chat instance in SpringShare, or !important
 // remove when switch to button for prod
-.lcs_slide_out, .lcs_slide_out-r{
-  top:50% !important;
-}
+// .lcs_slide_out, .lcs_slide_out-r{
+//   top:50% !important;
+// }
 
 
 // Styling for LibChat widget -- need code of production widget!
-// #libchat_4661c700ed5936ed7ce684ec54e4eba1 for TESTING/PREPROD
-// #libchat_5b6ccf0890ace526e5703d7f2baf7e4f for PRODUCTION
-// Chrome not affected by these settings. Wors in Firefox
+// #libchat_4661c700ed5936ed7ce684ec54e4eba1 is the button chat widget
+// #libchat_5b6ccf0890ace526e5703d7f2baf7e4f is the slide out chat widget
+// Chrome not affected by these settings. Works in Firefox
 #libchat_4661c700ed5936ed7ce684ec54e4eba1 {
   z-index: 100;
   position: fixed;
@@ -67,7 +67,7 @@ prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
   top: 50%;
 }
 
-// This is on test instance -- need ID# for production
+// This is for the button chat widget instance
 // proactive "chat now?" window. Using !important because something internally is overwriting the code. 
 #libchat_modal_20608 {
   z-index: 100 !important;

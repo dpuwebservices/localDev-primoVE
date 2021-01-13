@@ -1,8 +1,8 @@
 function init() {
 
-  // testing/preprod
+  // button chat widget
   const chatID = "4661c700ed5936ed7ce684ec54e4eba1";
-  // production
+  // slide out chat widget
   // const chatID = "5b6ccf0890ace526e5703d7f2baf7e4f";
   const chat_element = document.createElement("div");
   const protocol = document.location.protocol ? "https://" : "http://";

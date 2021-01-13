@@ -14,19 +14,19 @@ prm-search > md-content.md-primoExplore-theme .main {
 
 */
 /* Show Main Menu links on Services Page */
-/* line 29, ../scss/custom1.scss */
+/* line 28, ../scss/custom1.scss */
 prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
   display: inline; }
 
-/* line 33, ../scss/custom1.scss */
+/* line 32, ../scss/custom1.scss */
 .my-refworks-ctm {
   display: none; }
 
-/* line 36, ../scss/custom1.scss */
+/* line 35, ../scss/custom1.scss */
 .my-refworks-separator-ctm {
   display: none; }
 
-/* line 42, ../scss/custom1.scss */
+/* line 41, ../scss/custom1.scss */
 .links-block-item .button-as-link.md-button.md-primoExplore-theme.md-ink-ripple {
   background: green;
   color: white;
@@ -34,11 +34,7 @@ prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
   font-weight: bold;
   border-radius: 4px; }
 
-/* line 53, ../scss/custom1.scss */
-.lcs_slide_out, .lcs_slide_out-r {
-  top: 50% !important; }
-
-/* line 62, ../scss/custom1.scss */
+/* line 61, ../scss/custom1.scss */
 #libchat_4661c700ed5936ed7ce684ec54e4eba1 {
   z-index: 100;
   position: fixed;
@@ -47,7 +43,7 @@ prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
   right: 0;
   top: 50%; }
 
-/* line 73, ../scss/custom1.scss */
+/* line 72, ../scss/custom1.scss */
 #libchat_modal_20608 {
   z-index: 100 !important;
   position: fixed !important;
@@ -56,49 +52,49 @@ prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
   right: 6% !important;
   top: 40% !important; }
 
-/* line 84, ../scss/custom1.scss */
+/* line 83, ../scss/custom1.scss */
 md-card-content img {
   max-width: 100%; }
-/* line 85, ../scss/custom1.scss */
+/* line 84, ../scss/custom1.scss */
 md-card-content a {
   color: #001a00;
   font-weight: bold; }
 
-/* line 88, ../scss/custom1.scss */
+/* line 87, ../scss/custom1.scss */
 md-card.highlight {
   background: white; }
 
-/* line 91, ../scss/custom1.scss */
+/* line 90, ../scss/custom1.scss */
 .search-scope-text {
   font-family: "Arial", "Helvetica", sans-serif; }
-  /* line 93, ../scss/custom1.scss */
+  /* line 92, ../scss/custom1.scss */
   .search-scope-text h3 {
     font-size: 18px;
     font-style: italic;
     font-weight: bold; }
-  /* line 98, ../scss/custom1.scss */
+  /* line 97, ../scss/custom1.scss */
   .search-scope-text p {
     margin: 0 0 20px 0; }
 
 @media only screen and (min-width: 1200px) {
-  /* line 106, ../scss/custom1.scss */
+  /* line 105, ../scss/custom1.scss */
   .available-online-filter img {
     max-width: 30%;
     float: left;
     border: 1px solid #001a00; }
-  /* line 107, ../scss/custom1.scss */
+  /* line 106, ../scss/custom1.scss */
   .available-online-filter p {
     max-width: 66%;
     float: right;
     padding: 4% 0; } }
-/* line 109, ../scss/custom1.scss */
+/* line 108, ../scss/custom1.scss */
 .available-online-filter p {
   color: black; }
 
-/* line 114, ../scss/custom1.scss */
+/* line 113, ../scss/custom1.scss */
 .prm-primary-bg.prm-hue1, prm-atoz-search-bar.prm-hue1, prm-browse-search-bar.prm-hue1, prm-collection-gallery-header .prm-hue1.collection-header-inner, prm-newspapers-search-bar.prm-hue1, prm-search-bar.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-tags-search-bar.prm-hue1, prm-topbar .top-nav-bar, prm-tree-nav prm-spinner .prm-hue1.diamond {
   background: #001a00; }
 
-/* line 118, ../scss/custom1.scss */
+/* line 117, ../scss/custom1.scss */
 .prm-primary-bg, prm-atoz-search-bar, prm-browse-search-bar, prm-collection-gallery-header .collection-header-inner, prm-newspapers-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark:after, prm-tags-search-bar, prm-tree-nav prm-spinner .diamond {
   background: green; }
