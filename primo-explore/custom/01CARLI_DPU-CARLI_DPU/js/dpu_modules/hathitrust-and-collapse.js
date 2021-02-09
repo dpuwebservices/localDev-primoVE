@@ -1,11 +1,25 @@
 function init() {
 
-     
+  const app = angular.module('viewCustom', ['angularLoad', 'hathiTrustAvailability']);
+
+
+  app.component("prmAlmaOtherMembersAfter", {
+    bindings: {
+        parentCtrl: "<",
+    },
+    controller: [
+        function () {
+        var ctrl = this;
+        ctrl.parentCtrl.isCollapsed = true;
+        },
+    ],
+    });       
+
     /****************************************************************************************************/
   
         /*In case of CENTRAL_PACKAGE - comment out the below line to replace the other module definition*/
   
-     var app = angular.module('viewCustom', ['angularLoad', 'hathiTrustAvailability']);
+
   
      
     /****************************************************************************************************/
@@ -200,7 +214,8 @@ function init() {
   });
   
   /* END HathiTrust Availability add-on */ 
-       
+
+
   
   }
 
