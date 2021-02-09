@@ -2,7 +2,7 @@ function init() {
 
   const app = angular.module('viewCustom', ['angularLoad', 'hathiTrustAvailability']);
 
-
+// **********************  UIC code to collapse I-Share holdings
   app.component("prmAlmaOtherMembersAfter", {
     bindings: {
         parentCtrl: "<",
@@ -14,22 +14,10 @@ function init() {
         },
     ],
     });       
+// ********************** end UIC code 
 
-    /****************************************************************************************************/
-  
-        /*In case of CENTRAL_PACKAGE - comment out the below line to replace the other module definition*/
-  
 
-  
-     
-    /****************************************************************************************************/
-  
-        /*In case of CENTRAL_PACKAGE - comment out the below line to replace the other module definition*/
-  
-        /*var app = angular.module('centralCustom', ['angularLoad']);
-  
-    /****************************************************************************************************/
-    
+// **********************  HathiTrust Temp access link code
   /* HathiTrust Availability add-on shared by CARLI 9/3/2020
   * adapted from https://github.com/UMNLibraries/primo-explore-hathitrust-availability
   *
@@ -213,7 +201,7 @@ function init() {
               </span>'
   });
   
-  /* END HathiTrust Availability add-on */ 
+// ********************** end  HathiTrust Temp access link code
 
 
   

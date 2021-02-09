@@ -1,9 +1,10 @@
 "use strict";
 
 const libchat = require("./dpu_modules/libchat");
-const htApp = require("./dpu_modules/hathitrust-and-collapse");
+const appMods = require("./dpu_modules/app-mods");
 
-htApp.init();     
+
+appMods.init();     
 libchat.init();     
 
 // (function(){
