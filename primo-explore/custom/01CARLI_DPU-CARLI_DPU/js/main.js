@@ -6,6 +6,8 @@ libchat.init();
 const htApp = require("./dpu_modules/hathitrust");
 htApp.init();
 
+const app = angular.module('viewCustom', ['angularLoad']);
+
 (function(){
 
      
