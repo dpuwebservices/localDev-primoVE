@@ -10385,6 +10385,11 @@
         "camelcase": "^3.0.0"
       }
     },
+    "yarn": {
+      "version": "1.22.10",
+      "resolved": "https://registry.npmjs.org/yarn/-/yarn-1.22.10.tgz",
+      "integrity": "sha512-IanQGI9RRPAN87VGTF7zs2uxkSyQSrSPsju0COgbsKQOOXr5LtcVPeyXWgwVa0ywG3d8dg6kSYKGBuYK021qeA=="
+    },
     "yazl": {
       "version": "2.5.1",
       "resolved": "https://registry.npmjs.org/yazl/-/yazl-2.5.1.tgz",
