@@ -21,7 +21,7 @@ function init() {
    var b = document.body;
     b.appendChild(w);
 
-})();
+}
 
 module.exports = {
     init
