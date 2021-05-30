@@ -23,14 +23,16 @@ $mainNav: $sharePointBlue;
 $topBar: $darkerSharepoint;
 
 
-/* Top banner for alerts */body::before { 
-  content: "ALERT: LibrarySearch will be offline between Saturday, May 29 8pm and Sunday, May 30 8pm for vendor-scheduled maintenance.";
-  display: inline-block;    
-  background: #FFFF00;    
-  text-align: center;    
-  width: 100%;    
-  font-weight: bold;
-}  /* END local banner *
+/* Top banner for alerts */
+// body::before { 
+//   content: "ALERT: LibrarySearch will be offline between Saturday, May 29 8pm and Sunday, May 30 8pm for vendor-scheduled maintenance.";
+//   display: inline-block;    
+//   background: #FFFF00;    
+//   text-align: center;    
+//   width: 100%;    
+//   font-weight: bold;
+// }  
+/* END local banner *
 
 
 /* Show Main Menu links on Services Page */
