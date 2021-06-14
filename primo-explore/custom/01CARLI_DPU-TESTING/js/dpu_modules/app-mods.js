@@ -45,7 +45,7 @@ function init() {
   *     entity-id="https://shibboleth.umich.edu/idp/shibboleth"></hathi-trust-availability>
   */
   app.component('prmSearchResultAvailabilityLineAfter', {
-  template: '<hathi-trust-availability ignore-copyright="true" entity-id="https://shib.is.depaul.edu/idp/shibboleth"></hathi-trust-availability>'
+  template: '<hathi-trust-availability ignore-copyright="false" entity-id="https://shib.is.depaul.edu/idp/shibboleth"></hathi-trust-availability>'
   });
   
   angular.module('hathiTrustAvailability', []).constant('hathiTrustBaseUrl', 'https://catalog.hathitrust.org/api/volumes/brief/json/').config(['$sceDelegateProvider', 'hathiTrustBaseUrl', function ($sceDelegateProvider, hathiTrustBaseUrl) {
