@@ -13,6 +13,10 @@ prm-search > md-content.md-primoExplore-theme .main {
 }
 
 */
+/* Top banner for alerts */
+/* END local banner *
+
+
 /* Show Main Menu links on Services Page */
 prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
   display: inline; }
@@ -24,7 +28,7 @@ prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
   display: none; }
 
 .links-block-item .button-as-link.md-button.md-primoExplore-theme.md-ink-ripple {
-  background: green;
+  background: #0D5EB8;
   color: white;
   padding: 6px 8px;
   font-weight: bold;
@@ -50,7 +54,7 @@ md-card-content img {
   max-width: 100%; }
 
 md-card-content a {
-  color: #001a00;
+  color: #062d59;
   font-weight: bold; }
 
 md-card.highlight {
@@ -69,7 +73,7 @@ md-card.highlight {
   .available-online-filter img {
     max-width: 30%;
     float: left;
-    border: 1px solid #001a00; }
+    border: 1px solid #062d59; }
   .available-online-filter p {
     max-width: 66%;
     float: right;
@@ -79,7 +83,7 @@ md-card.highlight {
   color: black; }
 
 .prm-primary-bg.prm-hue1, prm-atoz-search-bar.prm-hue1, prm-browse-search-bar.prm-hue1, prm-collection-gallery-header .prm-hue1.collection-header-inner, prm-newspapers-search-bar.prm-hue1, prm-search-bar.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-tags-search-bar.prm-hue1, prm-topbar .top-nav-bar, prm-tree-nav prm-spinner .prm-hue1.diamond {
-  background: #001a00; }
+  background: #062d59; }
 
 .prm-primary-bg, prm-atoz-search-bar, prm-browse-search-bar, prm-collection-gallery-header .collection-header-inner, prm-newspapers-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark:after, prm-tags-search-bar, prm-tree-nav prm-spinner .diamond {
-  background: green; }
+  background: #0D5EB8; }
