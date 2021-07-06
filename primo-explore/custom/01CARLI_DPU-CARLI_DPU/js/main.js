@@ -1,13 +1,13 @@
 "use strict";
 
 const libchat = require("./dpu_modules/libchat");
-// const stackmap = require("./dpu_modules/stackmap"); *** uncomment when ready to open stacks for browsing
+// const stackmap = require("./dpu_modules/stackmap"); *** uncomment when online maps are updated
 const appMods = require("./dpu_modules/app-mods");
 
 
 appMods.init();     
 libchat.init();   
-// stackmap.init();  *** uncomment when ready to open stacks for browsing
+// stackmap.init();  *** uncomment when online maps are updated
 
 // (function(){
 
