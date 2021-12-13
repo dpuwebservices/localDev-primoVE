@@ -1,0 +1,89 @@
+/*Uncomment the follwoing lines to move facets to the left*/
+/*
+prm-search > md-content.md-primoExplore-theme .main {
+    display: -webkit-flex; !* Safari *!
+    -webkit-flex-flow: row-reverse wrap; !* Safari 6.1+ *!
+    display: flex;
+    flex-flow: row-reverse wrap;
+
+}
+.screen-gt-sm .sidebar{
+    webkit-flex: 0 0 15%;
+    flex: 0 0 15%;
+}
+
+*/
+/* Top banner for alerts */
+/* END local banner *
+
+
+/* Show Main Menu links on Services Page */
+prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
+  display: inline; }
+
+.my-refworks-ctm {
+  display: none; }
+
+.my-refworks-separator-ctm {
+  display: none; }
+
+.links-block-item .button-as-link.md-button.md-primoExplore-theme.md-ink-ripple {
+  background: green;
+  color: white;
+  padding: 6px 8px;
+  font-weight: bold;
+  border-radius: 4px; }
+
+#libchat_4661c700ed5936ed7ce684ec54e4eba1 {
+  z-index: 100;
+  position: fixed;
+  left: unset;
+  bottom: unset;
+  right: 0;
+  top: 50%; }
+
+#libchat_modal_20608 {
+  z-index: 100 !important;
+  position: fixed !important;
+  left: unset !important;
+  bottom: unset !important;
+  right: 6% !important;
+  top: 40% !important; }
+
+md-card-content img {
+  max-width: 100%; }
+
+md-card-content a {
+  color: #001a00;
+  font-weight: bold; }
+
+md-card.highlight {
+  background: white; }
+
+.search-scope-text {
+  font-family: "Arial", "Helvetica", sans-serif; }
+  .search-scope-text h3 {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold; }
+  .search-scope-text p {
+    margin: 0 0 20px 0; }
+
+@media only screen and (min-width: 1200px) {
+  .available-online-filter img {
+    max-width: 30%;
+    float: left;
+    border: 1px solid #001a00; }
+  .available-online-filter p {
+    max-width: 66%;
+    float: right;
+    padding: 4% 0; } }
+
+.available-online-filter p {
+  color: black; }
+
+.prm-primary-bg.prm-hue1, prm-atoz-search-bar.prm-hue1, prm-browse-search-bar.prm-hue1, prm-collection-gallery-header .prm-hue1.collection-header-inner, prm-newspapers-search-bar.prm-hue1, prm-search-bar.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-tags-search-bar.prm-hue1, prm-topbar .top-nav-bar, prm-tree-nav prm-spinner .prm-hue1.diamond {
+  background: #001a00; }
+
+.prm-primary-bg, prm-atoz-search-bar, prm-browse-search-bar, prm-collection-gallery-header .collection-header-inner, prm-newspapers-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark:after, prm-tags-search-bar, prm-tree-nav prm-spinner .diamond {
+  background: green; }
