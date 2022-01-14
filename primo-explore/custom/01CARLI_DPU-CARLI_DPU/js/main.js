@@ -1,7 +1,8 @@
 "use strict";
 
 const libchat = require("./dpu_modules/libchat");
-// const stackmap = require("./dpu_modules/stackmap"); *** uncomment when online maps are updated
+// const stackmap = require("./dpu_modules/stackmap"); 
+// *** uncomment when online maps are updated
 const appMods = require("./dpu_modules/app-mods");
 
 
