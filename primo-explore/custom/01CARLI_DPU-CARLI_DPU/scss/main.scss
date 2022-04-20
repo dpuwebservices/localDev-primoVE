@@ -22,6 +22,9 @@ $darkerSharepoint: darken($sharePointBlue, 20%);
 $mainNav: $sharePointBlue;
 $topBar: $darkerSharepoint;
 
+prm-collection-gallery-header .collection-header-inner {
+  background-color: yellow; 
+} 
 
 /* Top banner for alerts */
 // body::before { 
