@@ -7,10 +7,15 @@
 
 - Cannot verify I-Share button styling (from creating new repo) until borrowing turned back on 
 
-
+-Using NVM to manage node versions. Use following command below before starting server.
+```
+nvm use 10.15.3
 ```
 
 ## Quick Start
+
+
+ 
 
 ```bash
 # run production
