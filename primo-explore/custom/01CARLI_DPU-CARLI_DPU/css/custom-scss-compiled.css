@@ -16,6 +16,17 @@ prm-search > md-content.md-primoExplore-theme .main {
 prm-collection-gallery-header .collection-header-inner {
   background-color: yellow; }
 
+/* The following three entries support the Primo VE HathiTrust Availability Add-On */
+span.umnHathiTrustLink {
+  margin-left: -5px; }
+
+span.umnHathiTrustLink md-icon svg {
+  height: 1.2em;
+  filter: grayscale(100%); }
+
+span.umnHathiTrustLink:hover md-icon svg {
+  filter: grayscale(0%); }
+
 /* Top banner for alerts */
 /* END local banner *
 
