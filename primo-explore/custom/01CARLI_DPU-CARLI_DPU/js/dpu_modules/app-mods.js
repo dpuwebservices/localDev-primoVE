@@ -1,5 +1,6 @@
 function init() {
 
+  //  This includes standard Hathitrust access
   const app = angular.module('viewCustom', ['angularLoad', 'hathiTrustAvailability']);
 
 // **********************  UIC code to collapse I-Share holdings
@@ -176,7 +177,7 @@ angular.module('hathiTrustAvailability', []).constant('hathiTrustBaseUrl', 'http
 /* END HathiTrust Availability add-on */ 
   
   
-  } // end init
+} // end init
 
   
 module.exports = {
