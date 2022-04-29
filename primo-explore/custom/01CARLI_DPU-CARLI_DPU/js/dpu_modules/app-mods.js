@@ -18,7 +18,7 @@ function init() {
 // ********************** end UIC code
  
 app.component('prmSearchResultAvailabilityLineAfter', {
-  template: '<hathi-trust-availability></hathi-trust-availability>'
+  template: '<hathi-trust-availability entity-id="https://shib.is.depaul.edu/idp/shibboleth"></hathi-trust-availability>'
 });
 
 angular.module('hathiTrustAvailability', []).constant('hathiTrustBaseUrl', 'https://catalog.hathitrust.org/api/volumes/brief/json/').config(['$sceDelegateProvider', 'hathiTrustBaseUrl', function ($sceDelegateProvider, hathiTrustBaseUrl) {
