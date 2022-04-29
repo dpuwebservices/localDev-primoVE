@@ -1,6 +1,8 @@
 function init() {
 
   //  This includes standard Hathitrust access
+  // https://www.carli.illinois.edu/products-services/i-share/discovery-interface/custom_package_hathitrust
+  
   const app = angular.module('viewCustom', ['angularLoad', 'hathiTrustAvailability']);
 
 // **********************  UIC code to collapse I-Share holdings
