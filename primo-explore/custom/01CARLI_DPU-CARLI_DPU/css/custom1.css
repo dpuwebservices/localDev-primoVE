@@ -46,7 +46,8 @@ prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
   color: white;
   padding: 6px 8px;
   font-weight: bold;
-  border-radius: 4px; }
+  border-radius: 4px;
+  margin: 0 10px 10px 0; }
 
 #libchat_4661c700ed5936ed7ce684ec54e4eba1 {
   z-index: 100;
