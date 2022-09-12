@@ -19,8 +19,57 @@ function init() {
     });       
 // ********************** end UIC code
  
+/* Primo VE HathiTrust Availability Add-On for CARLI I-Share - 12/15/2020
+* adapted from https://github.com/UMNLibraries/primo-explore-hathitrust-availability
+*
+* NOTE: Be sure to add 'hathiTrustAvailability' to the
+*       angular.module() function at the top of the custom.js file,
+*       i.e., add it to the array that also includes 'angularLoad', e.g.:
+*
+* var app = angular.module('viewCustom', ['angularLoad', 'hathiTrustAvailability']);
+*
+* There are several optional configuration choices you can set for the app.component "template":
+*
+* Customizing the Availability Message - The default availability message that displays in the Brief 
+* Results list and the Full Record page is "Full Text Available at HathiTrust". You can override 
+* this by setting the msg attribute:
+* 
+* <hathi-trust-availability msg="Set this text to your preferred message"></hathi-trust-availability>
+* 
+* Selectively Suppress Full-text Links - By default, the component will display full-text links 
+* for any resource.
+* 
+* --If you want it avoid looking for full-text availability on records for which you already have online 
+* access, add the hide-online attribute to the component:
+* 
+* <hathi-trust-availability hide-online="true"></hathi-trust-availability>
+* 
+* --You can also suppress full-text links for journals, if desired, with hide-if-journal option:
+* 
+* <hathi-trust-availability hide-if-journal="true"></hathi-trust-availability>
+* 
+* Copyright Status - By default, the component will display only when the item is out of copyright 
+* and therefore should be accessible.
+* 
+* --If you want to display full-text links to any HathiTrust record, regardless of copyright status, 
+* use the ignore-copyright attribute:
+* 
+* <hathi-trust-availability ignore-copyright="true"></hathi-trust-availability>
+* 
+* --If your institution is a HathiTrust partner institution and you want the availability links 
+* in Primo VE to use HathiTrust's automatic login process, add your SAML IdP's entity ID:
+* 
+* <hathi-trust-availability entity-id="https://shibboleth.inst.edu/idp/shibboleth"></hathi-trust-availability>
+*
+* E.g.,
+* app.component('prmSearchResultAvailabilityLineAfter', {
+*   template: '<hathi-trust-availability hide-online="true" msg="Set this text to your preferred message"></hathi-trust-availability>'
+* });
+*
+*/
+
 app.component('prmSearchResultAvailabilityLineAfter', {
-  template: '<hathi-trust-availability entity-id="https://shib.is.depaul.edu/idp/shibboleth"></hathi-trust-availability>'
+  template: '<hathi-trust-availability></hathi-trust-availability>'
 });
 
 angular.module('hathiTrustAvailability', []).constant('hathiTrustBaseUrl', 'https://catalog.hathitrust.org/api/volumes/brief/json/').config(['$sceDelegateProvider', 'hathiTrustBaseUrl', function ($sceDelegateProvider, hathiTrustBaseUrl) {
@@ -124,7 +173,6 @@ angular.module('hathiTrustAvailability', []).constant('hathiTrustBaseUrl', 'http
     return value.match(/^(\(ocolc\))\d+$/i);
   };
 
-
   var updateHathiTrustAvailability = function updateHathiTrustAvailability() {
     var hathiTrustIds = (self.prmSearchResultAvailabilityLine.result.pnx.addata.oclcid || []).filter(isOclcNum).map(function (id) {
       return 'oclc:' + id.toLowerCase().replace('(ocolc)', '');
@@ -178,7 +226,7 @@ angular.module('hathiTrustAvailability', []).constant('hathiTrustBaseUrl', 'http
 });
 
 /* END HathiTrust Availability add-on */ 
-  
+
   
 } // end init
 
