@@ -28,14 +28,6 @@ span.umnHathiTrustLink:hover md-icon svg {
   filter: grayscale(0%); }
 
 /* Top banner for alerts */
-body::before {
-  content: "Library locations are currently closed for the holiday break. The ability to request items has been temporarily suspended, but will resume on January 2nd.";
-  display: inline-block;
-  background: #FFFF00;
-  text-align: center;
-  width: 100%;
-  font-weight: bold; }
-
 /* END local banner *
 
 
