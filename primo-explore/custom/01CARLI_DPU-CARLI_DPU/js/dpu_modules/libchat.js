@@ -15,7 +15,7 @@ function init() {
   chat_script.setAttribute("async", "true");
   chat_script.setAttribute(
     "src",
-    `${protocol}v2.libanswers.com/load_chat.php?hash=${chatID}`
+    `${protocol}depaul.libanswers.com/load_chat.php?hash=${chatID}`
   );
   document.body.appendChild(chat_script);
 }
