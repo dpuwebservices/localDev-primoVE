@@ -5,20 +5,25 @@ function init() {
   
   const app = angular.module('viewCustom', ['angularLoad', 'hathiTrustAvailability']);
 
-// **********************  UIC code to collapse I-Share holdings
-  app.component("prmAlmaOtherMembersAfter", {
-    bindings: {
-        parentCtrl: "<",
-    },
-    controller: [
-        function () {
-        var ctrl = this;
-        ctrl.parentCtrl.isCollapsed = true;
-        },
-    ],
-    });       
-// ********************** end UIC code
+/* Collapse "Get It From Other Institutions" dropdown by default in full record display. */
  
+app.component("prmAlmaOtherMembersAfter", {
+  bindings: {
+    parentCtrl: "<",
+  },
+  controller: [
+    function() {
+      var ctrl = this;
+ 
+      this.$onInit = function(){
+        {
+          ctrl.parentCtrl.isCollapsed = true;
+        }
+      };
+    },
+  ],
+});
+  
 /* Primo VE HathiTrust Availability Add-On for CARLI I-Share - 12/15/2020
 * adapted from https://github.com/UMNLibraries/primo-explore-hathitrust-availability
 *
