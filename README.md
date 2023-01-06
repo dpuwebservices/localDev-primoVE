@@ -14,6 +14,7 @@ nvm use 10.15.3
 # run production
 yarn runprod
 ```
+View at http://localhost:8003/discovery/search?vid=01CARLI_DPU:CARLI_DPU&lang=en 
 
 ```bash
 # create package for production
