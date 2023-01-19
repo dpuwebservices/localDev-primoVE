@@ -6,7 +6,6 @@ function init() {
   const app = angular.module('viewCustom', ['angularLoad', 'hathiTrustAvailability']);
 
 /* Collapse "Get It From Other Institutions" dropdown by default in full record display. */
- 
 app.component("prmAlmaOtherMembersAfter", {
   bindings: {
     parentCtrl: "<",
